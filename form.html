@@ -4,7 +4,7 @@
 <title>Player Details</title>
 <style>
 .container { 
-  height: 500px;
+  height: 400px;
   position: relative;
   border: 1px solid black;
   background-color:powderblue;  
@@ -30,7 +30,7 @@
    padding-right : 300px;
  }
  .required:after{
-   content:"*";
+   content:" *";
    color:red;
  }
  .font{
@@ -56,28 +56,28 @@
 <form>
 <table class = "center">
   <tr>
-  <th><label for="name">Name:</label></th>
-  <td><input type="text" id="name" name="name" required></td>
+  <th><label class="required" for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="text" id="name" name="name" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="dob">DOB:</label></th>
-  <td><input type="date" id="dob" name="dob" required></td>
+  <th><label class="required" for="dob">DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="date" id="dob" name="dob" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="age">Age:</label></th>
-  <td><input type="text" id="age" name="age" required></td>
+  <th><label class="required" for="age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="text" id="age" name="age" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="email">Email ID:</label></th>
-  <td><input type="email" id="email" name="email" required></td>
+  <th><label class="required" for="email">Email ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="email" id="email" name="email" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="country">Country:</label></th>
-  <td><select name="country" id="country" required>
+  <th><label class="required" for="country">Country</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><select name="country" id="country" required=required>
 	<option value="Australia">Australia</option>
 	<option value="Bangladesh">Bangladesh</option>
 	<option value="England">England</option>
@@ -91,56 +91,58 @@
   </tr>
   <br><br>
   <tr>
-  <th><label for="skill">Skill:</label></th>
+  <th><label for="skill">Skill</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
   <td><input type="checkbox" id="batting" name="batting" value="batting">
-  <label for="batting">Batting</label></td>
-  <td><input type="checkbox" id="bowling" name="bowling" value="bowling">
+  <label for="batting">Batting</label>
+  <input type="checkbox" id="bowling" name="bowling" value="bowling">
   <label for="bowling">Bowling</label></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="bat style">Bat Style:</label></th>
-  <td><input type="radio" id="right handed" name="right handed" value="right handed">
-  <label for="right handed">Right Handed</label></td>
-  <td><input type="radio" id="left handed" name="left handed" value="left handed">
-  <label for="left handed">Left Handed</label></td>
+  <th><label for="bat style">Bat Style</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="radio" id="bat" name="bat" value="bat">
+  <label for="right handed">Right</label>
+  <input type="radio" id="bat" name="bat" value="bat">
+  <label for="left handed">Left</label></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="bowl style">Bowl Style:</label></th>
-  <td><input type="radio" id="right handed" name="right handed" value="right handed">
-  <label for="right handed">Right Handed</label></td>
-  <td><input type="radio" id="left handed" name="left handed" value="left handed">
-  <label for="left handed">Left Handed</label></td>
+  <th><label for="bowl style">Bowl Style</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="radio" id="bowl" name="bowl" value="bowl">
+  <label for="right handed">Right</label>
+  <input type="radio" id="bowl" name="bowl" value="bowl">
+  <label for="left handed">Left</label></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="matches">Matches:</label></th>
-  <td><input type="text" id="matches" name="matches"></td>
+  <th><label class="required" for="matches">Matches</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="number" id="matches" name="matches" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="runs">Runs:</label></th>
-  <td><input type="text" id="runs" name="runs"></td>
+  <th><label class="required" for="runs">Runs</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="number" id="runs" name="runs" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="wickets">Wickets:</label></th>
-  <td><input type="text" id="wickets" name="wickets"></td>
+  <th><label class="required" for="wickets">Wickets</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><input type="number" id="wickets" name="wickets" required=required></td>
   </tr>
   <br><br>
   <tr>
-  <th><label for="achievements">Achievements:</label></th>
-  <td><input type="textarea" id="achievements" name="achievements"></td>
+  <th><label for="achievements">Achievements</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <td><textarea type="text" id="achieve" name="achieve" placeholder="Your Achievements.." rows="4" cols="25"></textarea></td>
   </tr>
-  <br><br>
+  <br>
   </table>
+  <table class = "myDiv" width=100% style ="padding-top : 5px">
+  <tr>
+  <td><button type="submit" formaction="home.html">Submit</button>
+  <button type="reset">Reset</button></td>
+  </tr>
+  </table>
+  </div>
 </form>
-</div>
-<br>
-<div class= "myDiv" style = "padding-top : 20px" >
- <input type="submit" value="submit">
- <input type="reset">
 </div>
 </body>
 </html>
