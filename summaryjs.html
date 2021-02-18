@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Match Summary</title>
+</head>
+<style>
+.required:after{
+ content:" *";
+ color: red;
+}
+.container { 
+  height: 400px;
+  position: relative;
+  border: 2px solid black;
+  background-color:powderblue;  
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.body_align{
+   padding-top : 100px;
+   padding-bottom : 100px;
+   padding-left : 300px;
+   padding-right : 300px;
+ }
+ .font{
+  font-family : verdana;
+  color : orange;
+  text-align : center;
+  }
+ .tab{
+  border : 0;
+  align : center;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top :auto;
+  margin-bottom : auto;
+  }
+</style>
+<body class="body_align">
+<div class = "container">
+<form id = "form1">
+<table class = "center">
+<tr><h3 class = "font">Match Summary</h3></tr>
+<br>
+<tr>
+<th><label class = "required" for="team A">Team A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="text" id="team A" name="team A" placeholder = "team A" required = required></td>
+</tr>
+<br>
+<tr>
+<th><label class = "required" for="team B">Team B</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="text" id="team B" name="team B" placeholder = "team B" required = required></td>
+</tr>
+<br>
+<tr>
+<th><label class = "required" for="date">Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="date" id="date" name="date" required = required></td>
+</tr>
+<br>
+<tr>
+<th><label class = "required" for="time">Time</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="time" id="time" name="time" required = required></td>
+</tr>
+<br>
+<tr>
+<th><label class = "required" for="team A Score">Team A Score</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="number" id="team A Score" name="team A Score" placeholder = "team A Score" required = required></td>
+</tr>
+<br>
+<tr>
+<th><label class = "required" for="team A Score">Team A Score</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<td><input type="number" id="team A Score" name="team A Score" placeholder = "team A Score" required = required></td>
+</tr>
+<br>
+<tr>
+<td><button type="submit" formaction="caljs.html">Save</button>
+</tr>
+<br>
+<tr>
+<th><label for= "winning team">Winning Team :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+</table>
+</form>
+</div>
+</body>
+</html>
