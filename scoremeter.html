@@ -14,51 +14,30 @@
   border: 2px solid black;
   background-color:powderblue;  
 }
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.body_align{
+.body_align{ 
+   text-align : center;
    padding-top : 100px;
    padding-bottom : 100px;
-   padding-left : 300px;
-   padding-right : 300px;
+   padding-left : 200px;
+   padding-right : 200px;
  }
  .font{
   font-family : verdana;
   color : orange;
   text-align : center;
   }
- .tab{
-  border : 0;
-  align : center;
-  margin-left: auto; 
-  margin-right: auto;
-  margin-top :auto;
-  margin-bottom : auto;
-  }
 </style>
 <body class="body_align">
-<div class = "container">
+<div class="container">
 <form id = "form1">
-<table class = "center">
-<tr><h3 class = "font">Score Meter</h3></tr>
+<h3 class = "font">Score Meter</h3>
 <br>
-<tr>
-<th><label class = "required" for="team A">Enter Score Details</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-<td><input type="text" id="score" name="score" placeholder = "singles,doubles,triples,fours,sixes." required = required></td>
-</tr>
-<br>
-<tr>
-<td style = "text-align:center"><button type="submit" onclick="myfunc()">Get Score</button>
-</tr>
-<br>
-</table>
+<pre style="font-size: large;">(Enter the number of singles,Doubles,Triples,Fours and Sixes in comma seperated format)</pre>
+<label class = "required" for="team A">Enter Score Details</label>
+<input type="text" id="score" name="score" required = required>
 </form>
+<br>
+<button style = "text-align:center" type="submit" onclick="myfunc()">Get Score</button>
 
   <p id="demo"></p>
 
